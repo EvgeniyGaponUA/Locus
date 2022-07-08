@@ -1,0 +1,83 @@
+
+.project-main {
+    padding: 7.2rem 0 13.6rem 0;
+    .project-main__container {
+        text-align: center;
+
+        // .project-main__title {}
+
+        .project-main__text {
+            margin-bottom: 4.2rem;
+        }
+
+        .project-main__line {
+            width: 13.5rem;
+            height: 2rem;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: 9.2rem;
+
+            &::before, &::after  {
+                content:'';
+                display: block;
+                width: 13.5rem;
+                height: 0.5rem;
+                background: $text-blue;
+                position: absolute;
+                left: 0;
+            }
+
+            &::before  {
+                top: 0;
+            }
+
+            &::after  {
+                bottom: 0;
+            }
+        }
+
+        .project-main__items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap:3rem;
+
+                .item-project {
+                    text-align: left;
+                    .item-project__title {
+                        font-weight: 700;
+                        font-size: 4rem;
+                        color: $text-blue;
+                        margin-bottom: 0.5rem;
+                    }
+                    .item-project__text {
+                        max-width: 45.3rem;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        color: $text-green;
+                        margin-bottom: 3.5rem;
+
+                        &--first {
+                            margin-bottom: 0;
+                        }
+                    }
+                    .item-project__image {
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                        &--first {
+                            margin-bottom: 3.5rem;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+
+
+

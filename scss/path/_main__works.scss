@@ -1,0 +1,99 @@
+
+.works-main {
+    padding: 7rem 0 7.2rem 0;
+
+    .works-main__container {
+
+        .works-main__title {
+            text-align: center;
+        }
+
+        .works-main__text {
+            text-align: center;
+            max-width: 51rem;
+            margin: 0 auto;
+            margin-bottom: 7rem;
+        }
+
+        .video-works {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15rem;
+    
+            .video-works__image {
+                max-width: 100%;
+                border-radius:  1rem 0px 0px 1rem;
+                // width: 100%;
+
+                // img {
+                //     width: 100%;
+                //     height: 100%;
+                //     object-fit: cover;
+                // }
+            }
+            .video-works__contant {
+                flex-basis: 54.9rem;
+                padding: 7rem 0 9rem 11.5rem;
+                background: $head-bg;
+                border-radius: 0px 1rem 1rem 0px;
+    
+                .video-works__text {
+                    margin-bottom: 4.1rem;
+                    font-size: 2rem;
+                    color: $text-green;
+                }
+                .video-works__link {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5rem;
+                    color: $text-green;  
+                }
+            }
+        }
+    
+        .item-works {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap:4rem;
+
+
+            .item-works__image {
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .item-works__contant {
+                max-width: 70.8rem;
+
+                
+                    &>*:not(:last-child) {
+                        margin-bottom: 5rem;
+                    }
+
+                .item-works__title {
+                    font-weight: 700;
+                    font-size: 4rem;
+                    max-width: 48.7rem;
+                }
+                .item-works__text {
+                    font-weight: 500;
+                    font-size: 3rem;
+                    color: $text-green;
+                }
+
+                .item-works__text--before {
+                    display: none;
+                    font-weight: 500;
+                    font-size: 3rem;
+                    color: $text-green;
+                }
+            }
+        }
+
+    }
+    
+}

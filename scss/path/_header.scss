@@ -1,0 +1,84 @@
+.header {
+    background-color: $white;
+    padding: 8.5rem 0;
+    margin-top: -1px;
+
+        .header__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+                .header__logo {
+                    display: flex;
+                    align-items: center;
+
+                        .logo__image {
+                            margin-right:1.5rem;
+                        }
+
+                        .logo__text {
+                            font-weight: 800;
+                            font-size: 3.5rem;
+                            color: $text-blue;
+                        }
+                }
+            
+                .nav-header {
+                    .nav-header__items {
+                        display: flex;
+                        align-items: center;
+
+                        .nav-header__item {
+                            min-width: 12rem;
+                            text-align: center;
+                            
+                            &:not(:last-child) {
+                                margin-right: 8.6rem;
+                            }
+
+                            .nav-header__link {
+                                font-weight: 400;
+                                font-size: 2.5rem;
+                                color: $text-gray;
+                                transition: all 0.5s;
+                                position: relative;
+                            }
+
+                            .nav-header__link:hover, .nav-header__link:active {
+                                font-weight: 700;                             
+                                color: $text-blue;
+                                transition: all 0.5s;
+
+                                    &::after {
+                                        content:'';
+                                        display: block;
+                                        position: absolute;
+                                        top: 100%;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        width: 4.8rem;
+                                        height: 0.6rem;
+                                        background: $orange;
+                                        border-radius: 2.1rem;
+                                    }
+                            }
+
+                            .nav-header__link:active {                            
+                                color: $orange;
+
+                            }
+                        }
+                    }
+                }
+            
+                .header__left {
+                    // .header__btn {}
+
+                    .header__burger {
+                        display: none;
+                        cursor: pointer;
+                    }
+                }
+        }
+
+}
